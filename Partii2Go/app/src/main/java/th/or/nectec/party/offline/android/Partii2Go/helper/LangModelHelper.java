@@ -20,14 +20,14 @@ import com.github.kittinunf.fuel.core.Request;
 import com.github.kittinunf.fuel.core.Response;
 
 import org.jetbrains.annotations.NotNull;
-import th.or.nectec.partii.embed.android.EmbeddedUtils.Constant;
+import th.or.nectec.partii.embedded.android.EmbeddedUtils.Constant;
 
 import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
 import kotlin.Pair;
-import th.or.nectec.partii.embed.android.EmbeddedUtils.ModelUtil;
+import th.or.nectec.partii.embedded.android.EmbeddedUtils.ModelUtil;
 import th.or.nectec.party.offline.android.Partii2Go.R;
 import th.or.nectec.party.offline.android.Partii2Go.util.DilaogUtil;
 

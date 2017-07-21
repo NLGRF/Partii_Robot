@@ -14,8 +14,7 @@ import android.widget.TextView;
 
 import java.io.File;
 
-import th.or.nectec.partii.embed.android.EmbeddedUtils.Constant;
-import th.or.nectec.partii.embed.android.EmbeddedUtils.ModelUtil;
+
 
 import th.or.nectec.party.offline.android.Partii2Go.button.ConvertingButton;
 import th.or.nectec.party.offline.android.Partii2Go.button.MainButton;
@@ -23,8 +22,6 @@ import th.or.nectec.party.offline.android.Partii2Go.button.RecordingButton;
 import th.or.nectec.party.offline.android.Partii2Go.helper.LangModelHelper;
 import th.or.nectec.party.offline.android.Partii2Go.util.DilaogUtil;
 
-import th.or.nectec.partii.embed.android.RecognitionListener;
-import th.or.nectec.partii.embed.android.SpeechRecognizer;
 
 import android.view.Menu;
 import android.view.MenuItem;
@@ -37,6 +34,10 @@ import android.os.Message;
 import io.netpie.microgear.Microgear;
 import io.netpie.microgear.MicrogearEventListener;
 
+import th.or.nectec.partii.embedded.android.EmbeddedUtils.ModelUtil;
+import th.or.nectec.partii.embedded.android.EmbeddedUtils.Constant;
+import th.or.nectec.partii.embedded.android.RecognitionListener;
+import th.or.nectec.partii.embedded.android.SpeechRecognizer;
 
 /**
  * Created by hin on 5/7/16.
@@ -57,7 +58,6 @@ public class MainActivity extends AppCompatActivity implements RecognitionListen
     private String decodedStr = "";
     private boolean isSetupRecognizer = false;
     private ModelUtil mUtil = new ModelUtil();
-    String imei = "";
 
     private Microgear microgear = null;
     private String appid = ""; //APP_ID
@@ -469,14 +469,14 @@ public class MainActivity extends AppCompatActivity implements RecognitionListen
     }
 
     @Override
-    public void onReceiveDownloadCompleteStatus() {
+    public void onReceiveDownloadComplete() {
         recognizer.stop();
         recognizer.shutdown();
         setUpRecognizer();
     }
 
     @Override
-    public void onReceiveDownloadFailedStatus() {
+    public void onReceiveDownloadFailed() {
 
     }
 

@@ -12,7 +12,7 @@ import android.preference.ListPreference;
 import android.preference.PreferenceActivity;
 import android.preference.PreferenceFragment;
 import android.preference.PreferenceManager;
-import th.or.nectec.partii.embed.android.EmbeddedUtils.Constant;
+import th.or.nectec.partii.embedded.android.EmbeddedUtils.Constant;
 
 public class SettingPreferencesActivity extends PreferenceActivity {
 

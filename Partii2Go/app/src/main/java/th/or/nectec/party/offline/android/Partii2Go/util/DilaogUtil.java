@@ -9,7 +9,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
 import mehdi.sakout.aboutpage.AboutPage;
-import th.or.nectec.partii.embed.android.EmbeddedUtils.Constant;
+import th.or.nectec.partii.embedded.android.EmbeddedUtils.Constant;
 import th.or.nectec.party.offline.android.Partii2Go.R;
 
 /**
